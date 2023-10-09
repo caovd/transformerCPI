@@ -460,10 +460,10 @@ class Tester(object):
             
             # Step 1.5
             # Docs snippet start: report validation metrics for each epoch
-            core_context.train.report_validation_metrics(
-                steps_completed=steps_completed,
-                metrics={"T": T, "Y": Y, "S": S},
-            )
+            # core_context.train.report_validation_metrics(
+            #     steps_completed=steps_completed,
+            #     metrics={"T": T, "Y": Y, "S": S},
+            # )
             # Docs snippet end: report training metrics for each epoch
             
         AUC = roc_auc_score(T, S)

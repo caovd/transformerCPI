@@ -105,7 +105,7 @@ if __name__ == "__main__":
             # Step 1.3
             # Docs snippet start: calculate steps completed
             # NEW: Calculate steps_completed for plotting test metrics.
-            steps_completed = (epoch-1) * len(dataset_train)
+            steps_completed = epoch * len(dataset_train)
             # Docs snippet end: calculate steps completed
 
             if epoch % decay_interval == 0:
